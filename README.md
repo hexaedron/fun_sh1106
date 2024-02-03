@@ -1,5 +1,5 @@
 # fun_sh1106
-Driver for sh1106 screens for use with ch32v003fun
+I2C Driver for sh1106 screens for use with ch32v003fun
 
 Mostly based on [this example](https://github.com/cnlohr/ch32v003fun/tree/master/examples/i2c_oled) with some optimisations.
 
