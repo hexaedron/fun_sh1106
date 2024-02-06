@@ -357,6 +357,18 @@ void sh1106::drawFastHLine( uint8_t x, uint8_t y, uint8_t w, uint8_t color )
 }
 
 /*
+ * Make a frame around the screen
+ */
+void sh1106::drawFrame (uint8_t color)
+{
+	drawFastHLine(0,		    0, 			  SH1106_W, color);
+	drawFastHLine(0,		    SH1106_H - 1, SH1106_W, color);
+	drawFastVLine(0,		    0, 			  SH1106_H, color);
+	drawFastVLine(SH1106_W - 1, 0, 			  SH1106_H, color);
+}
+
+
+/*
  * abs() helper function for line drawing
  */
 int16_t sh1106::gfx_abs( int16_t x )

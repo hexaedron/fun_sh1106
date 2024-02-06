@@ -74,6 +74,9 @@ public:
 	// Flip horisontally
 	void flipH( void );
 
+	// Make a frame around the screen
+	void drawFrame (uint8_t color);
+
 	// plot a pixel in the buffer
 	void drawPixel( uint8_t x, uint8_t y, uint8_t color );
 
