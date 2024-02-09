@@ -289,6 +289,8 @@ void sh1106::drawImage(
 				// state of current pixel
 				uint8_t input_pixel = input_byte & ( 1 << pixel );
 
+				pageUpdateMask |= ( 1 << ( x_absolute % SH1106_MAX_PAGE_COUNT ) );
+
 				switch ( color_mode )
 				{
 					case 0:
